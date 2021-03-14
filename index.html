@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Caverna</title>
+        <link rel="stylesheet" type="text/css" href='style.css'>
+    </head>
+    <body>
+        
+        <section>
+            <div class="focus"></div>i
+            
+        <a href=""><h1>
+            
+        </h1>
+        </a>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">vamos sair da caverna?</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>numa fase inicial da pandemia, quase metade dos portugueses (49,2%) sentiu um impacto psicológico "moderado a severo"</p>
+    <h4>começa a conversa.</h4>
+    <p>segue em:</p>
+    <a href="">
+        <p>FB  IG  YT</p>
+    </a>
+  </div>
+
+</div>
+
+
+        </section>
+
+       
+       
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+           $(document).mousemove(function(e){
+              var X = e.pageX;
+              var Y = e.pageY;
+              $('.focus').css('background','radial-gradient(circle at '+X+'px '+Y+'px, transparent, #000 30%)')
+            })
+
+                        // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on the button, open the modal
+                btn.onclick = function() {
+                modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+
+        </script>
+    </body>
+</html>
